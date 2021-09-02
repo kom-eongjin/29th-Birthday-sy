@@ -1,0 +1,155 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(simple-bg1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: circle(150px at center);
+
+}
+
+.container
+{
+  position: relative;
+  margin-top: 200vh;
+  background: white;
+  padding: 50px;
+}
+
+.container h2
+{
+  font-family: 'Red Rose', serif;
+  font-size: 1.5em;
+  color: #F7ACBA;
+  margin-bottom: 20px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.tit
+{
+  position: relative;
+  top: 230px;
+  z-index: 1;
+  font-size: 2.5em;
+  font-family: 'Red Rose', serif;
+  color: #F7ACBA;
+  text-align: center;
+  width: 100%;
+}
+
+body::-webkit-scrollbar
+{ /* 스크롤바 막대 너비 설정 */
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb
+{ /* 스크롤바 막대 높이 설정 */
+  height: 17%;
+  background-color: #F7ACBA;
+  /* 스크롤바 둥글게 설정 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track
+{ background-color: rgba(0,0,0,0);
+}
+
+@media all and (max-width:1024px)
+{
+  section
+  {
+    background: url(this-bg-pad.png);
+    background-size: cover;
+    -webkit-clip-path: circle(147px at center);
+  }
+  .container
+  {
+    padding: 60px;
+  }
+
+  .container h2
+  {
+    font-size: 2.1em;
+  }
+}
+
+@media all and (max-width:981px)
+{
+  section
+  {
+    background: url(this-bg-pad.png);
+    background-size: cover;
+    -webkit-clip-path: circle(147px at center);
+  }
+  .container
+  {
+    padding: 60px;
+  }
+
+  .container h2
+  {
+    font-size: 2.1em;
+  }
+}
+
+@media all and (max-width:768px)
+{
+  section
+  {
+    background: url(this-bg-pad.png);
+    background-size: cover;
+    -webkit-clip-path: circle(147px at center);
+  }
+  .container
+  {
+    padding: 55px;
+  }
+
+  .container h2
+  {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width:640px)
+{
+  section
+  {
+    background: url(this-bg-mobile.png);
+    background-size: cover;
+    -webkit-clip-path: circle(70px at center);
+  }
+
+  .container
+  {
+    padding: 30px;
+  }
+
+  .container h2
+  {
+    font-size: 1.4em;
+    padding: 5px;
+
+  }
+
+  .tit
+  {
+    font-size: 1.8em;
+  }
+
+  body::-webkit-scrollbar
+  { /* 스크롤바 막대 너비 설정 */
+    width: 10px;
+  }
+}
